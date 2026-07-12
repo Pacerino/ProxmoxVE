@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+export SOURCE_REPO="${SOURCE_REPO:-Pacerino/ProxmoxVE}"
+export SOURCE_BRANCH="${SOURCE_BRANCH:-main}"
+source <(curl -fsSL "https://raw.githubusercontent.com/${SOURCE_REPO}/${SOURCE_BRANCH}/misc/build.func")
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MoldyTaint
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
